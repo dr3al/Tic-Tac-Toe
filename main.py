@@ -24,23 +24,7 @@ def a_turn():
         a_turn()
     else:
         if x == 1:
-            flat[0] = 'X'
-        elif x == 2:
-            flat[1] = 'X'
-        elif x == 3:
-            flat[2] = 'X'
-        elif x == 4:
-            flat[3] = 'X'
-        elif x == 5:
-            flat[4] = 'X'
-        elif x == 6:
-            flat[5] = 'X'
-        elif x == 7:
-            flat[6] = 'X'
-        elif x == 8:
-            flat[7] = 'X'
-        elif x == 9:
-            flat[8] = 'X'
+            flat[x-1] = 'x'
         else:
             print('Такой ячейки не существует')
 
@@ -50,24 +34,7 @@ def b_turn():
         b_turn()
     else:
         if x == 1:
-            flat[0] = 'O'
-        elif x == 2:
-            flat[1] = 'O'
-        elif x == 3:
-            flat[2] = 'O'
-        elif x == 4:
-            flat[3] = 'O'
-        elif x == 5:
-            flat[4] = 'O'
-        elif x == 6:
-            flat[5] = 'O'
-        elif x == 7:
-            flat[6] = 'O'
-        elif x == 8:
-            flat[7] = 'O'
-        elif x == 9:
-            flat[8] = 'O'
-
+            flat[x-1] = 'O'
 def end_g():
     if flat[0] == flat[1] == flat[2] == 'X' or flat[3] == flat[4] == flat[5] == 'X' or flat[6] == flat[7] == flat[8] == 'X' or flat[0] == flat[3] == flat[6] == 'X' or flat[1] == flat[4] == flat[7] == 'X' or flat[2] == flat[5] == flat[8] == 'X' or flat[0] == flat[4] == flat[8] == 'X' or flat[2] == flat[4] == flat[6] == 'X':
         clrscr()
